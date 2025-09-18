@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio - Active Bootstrap Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      $(document).ready(function () {
+        $("footer").load("footer.html");
+        $("#services").load("/service-section.html");
+      });
+    </script>
+  </head>
+
+  <body class="portfolio-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">
+            <img src="assets/img/innerpeace/logo2-white.png" alt="" />
+          </h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li class="dropdown">
+              <a href="index.html"
+                ><span>이너피스</span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="center.html">센터소개</a></li>
+                <li><a href="profile.html">프로필</a></li>
+                <li><a href="browse.html">둘러보기</a></li>
+                <li><a href="news.html">기사보기</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="brain-rehab.html"
+                ><span>프로그램</span
+                ><i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="brain-rehab.html">뇌손상재활</a></li>
+                <li><a href="sport-damage.html">스포츠손상</a></li>
+                <li><a href="chronic-pain.html">만성통증운동재활</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="rehab-center.html"><span>오시는길</span></a>
+            </li>
+          </ul>
+
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title light-background">
+        <div class="container">
+          <h1>둘러보기</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">둘러보기</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li data-filter="*" class="filter-active">전체</li>
+              <li data-filter=".filter-certificate">
+                산학협력 및 보험가입 인증서
+              </li>
+              <li data-filter=".filter-migum">운동재활센터(미금점)</li>
+              <li data-filter=".filter-seohyun">운동재활센터(서현점)</li>
+            </ul>
+            <!-- End Portfolio Filters -->
+
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate"
+              >
+                <img
+                  src="assets/img/innerpeace/certificate-01.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>보험가입인증서</h4>
+                  <p>Certificate of insurance</p>
+                  <a
+                    href="assets/img/innerpeace/certificate-01.jpg"
+                    title="전체보기"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate"
+              >
+                <img
+                  src="assets/img/innerpeace/certificate-03.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>산학협력 가족회사 협약서</h4>
+                  <p>Industry-Academic Cooperation Family Company Agreement</p>
+                  <a
+                    href="assets/img/innerpeace/certificate-03.jpg"
+                    title="산학협력 가족회사 협약서"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate"
+              >
+                <img
+                  src="assets/img/innerpeace/certificate-04.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>위촉장</h4>
+                  <p>Appointment letter</p>
+                  <a
+                    href="assets/img/innerpeace/certificate-04.jpg"
+                    title="위촉장"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate"
+              >
+                <img
+                  src="assets/img/innerpeace/certificate-05.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>산학협동 협약서</h4>
+                  <p>Industry-Academia Cooperation Agreement</p>
+                  <a
+                    href="assets/img/innerpeace/certificate-05.jpg"
+                    title="산학협동 협약서"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate"
+              >
+                <img
+                  src="assets/img/innerpeace/certificate-06.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>위촉장</h4>
+                  <p>Appointment letter</p>
+                  <a
+                    href="assets/img/innerpeace/certificate-06.jpg"
+                    title="위촉장"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate"
+              >
+                <img
+                  src="assets/img/innerpeace/certificate-07.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>산학협력협약서</h4>
+                  <p>Industry-Academic Cooperation Agreement</p>
+                  <a
+                    href="assets/img/innerpeace/certificate-07.jpg"
+                    title="산학협력협약서"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate"
+              >
+                <img
+                  src="assets/img/innerpeace/certificate-08.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>산학협력협약서</h4>
+                  <p>Industry-Academic Cooperation Agreement</p>
+                  <a
+                    href="assets/img/innerpeace/certificate-08.jpg"
+                    title="산학협력협약서"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate"
+              >
+                <img
+                  src="assets/img/innerpeace/certificate-09.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>산학협력협정서</h4>
+                  <p>Industry-Academic Cooperation Agreement</p>
+                  <a
+                    href="assets/img/innerpeace/certificate-09.jpg"
+                    title="산학협력협정서"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certificate"
+              >
+                <img
+                  src="assets/img/innerpeace/certificate-10.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>교육협력기관</h4>
+                  <p>Educational cooperation agency</p>
+                  <a
+                    href="assets/img/innerpeace/certificate-10.jpg"
+                    title="교육협력기관"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rehab"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-01-01.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(미금점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-01-01.jpg"
+                    title="이너피스 운동재활센터(미금점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rehab"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-01-02.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(미금점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-01-02.jpg"
+                    title="이너피스 운동재활센터(미금점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-migum"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-01-03.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(미금점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-01-03.jpg"
+                    title="이너피스 운동재활센터(미금점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-migum"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-01-04.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(미금점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-01-04.jpg"
+                    title="이너피스 운동재활센터(미금점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-migum"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-01-05.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(미금점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-01-05.jpg"
+                    title="이너피스 운동재활센터(미금점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-migum"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-01-06.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(미금점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-01-06.jpg"
+                    title="이너피스 운동재활센터(미금점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-migum"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-01-07.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(미금점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-01-07.jpg"
+                    title="이너피스 운동재활센터(미금점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-migum"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-01-08.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(미금점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-01-08.jpg"
+                    title="이너피스 운동재활센터(미금점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-seohyun"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-02-01.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(서현점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-02-01.jpg"
+                    title="이너피스 운동재활센터(서현점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-seohyun"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-02-02.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(서현점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-02-02.jpg"
+                    title="이너피스 운동재활센터(서현점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-seohyun"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-02-03.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(서현점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-02-03.jpg"
+                    title="이너피스 운동재활센터(서현점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-seohyun"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-02-04.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(서현점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-02-04.jpg"
+                    title="이너피스 운동재활센터(서현점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-seohyun"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-02-05.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(서현점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-02-05.jpg"
+                    title="이너피스 운동재활센터(서현점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-seohyun"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-02-06.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(서현점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-02-06.jpg"
+                    title="이너피스 운동재활센터(서현점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-seohyun"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-02-07.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(서현점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-02-07.jpg"
+                    title="이너피스 운동재활센터(서현점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-seohyun"
+              >
+                <img
+                  src="assets/img/innerpeace/rehab-02-08.jpg"
+                  class="img-fluid w-full"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>이너피스 운동재활센터(서현점)</h4>
+                  <p>Innerpeace Rehabilitation</p>
+                  <a
+                    href="assets/img/innerpeace/rehab-02-08.jpg"
+                    title="이너피스 운동재활센터(미금점)"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="링크이동"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+
+        <!-- Scroll Top -->
+        <a
+          href="#"
+          id="scroll-top"
+          class="scroll-top d-flex align-items-center justify-content-center"
+          ><i class="bi bi-arrow-up-short"></i
+        ></a>
+
+        <!-- Preloader -->
+        <div id="preloader"></div>
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+        <!-- Main JS File -->
+        <script src="assets/js/main.js"></script>
+      </section>
+      <footer id="footer" class="footer light-background"></footer>
+    </main>
+  </body>
+</html>
