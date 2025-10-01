@@ -827,9 +827,7 @@ section,
   opacity: 0.3;
 }
 
-.about,
-.swiper-pagination,
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.about .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #2b4cc6;
   opacity: 1;
 }
