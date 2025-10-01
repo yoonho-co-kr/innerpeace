@@ -1426,9 +1426,7 @@ section,
   opacity: 0.3;
 }
 
-.testimonials,
-.swiper-pagination,
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.testimonials.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #2b4cc6;
   opacity: 1;
 }
