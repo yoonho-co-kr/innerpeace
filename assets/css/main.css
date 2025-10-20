@@ -62,10 +62,10 @@
 }
 
 @font-face {
-  font-family: "YeongwolTTF-Regular";
-  src: url("../font/YeongwolTTF.ttf") format("ttf");
+  font-family: 'Yeongwol';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2507-2@1.0/YeongwolTTF-Regular.woff2') format('woff2');
   font-weight: normal;
-  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -872,8 +872,8 @@ section,
     justify-content: flex-end;
 
     & span.signature {
-      font-family: "YeongwolTTF-Regular", "Pretendard", "Lato", sans-serif;
-      font-size: 60px;
+      font-family: "Yeongwol", Yeoongwol, "Pretendard", "Lato", sans-serif;
+      font-size: 50px;
     }
   }
 
